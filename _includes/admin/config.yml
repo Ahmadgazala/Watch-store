@@ -1,7 +1,8 @@
 backend:
-  name: admin
+  name: github
   repo: https://github.com/Ahmadgazala/Watch-store
   branch: main
+  auth_endpoint: https://Ahmadgazala.github.io/admin/auth.html
 
 media_folder: "public"
 public_folder: "/public"
@@ -14,9 +15,3 @@ collections:
     fields:
       - { name: "title", label: "العنوان", widget: "string" }
       - { name: "body", label: "المحتوى", widget: "markdown" }
-
-backend:
-  name: github
-  repo: https://github.com/Ahmadgazala/Watch-store
-  branch: main
-  auth_endpoint: https://Ahmadgazala.github.io/admin/auth.html
