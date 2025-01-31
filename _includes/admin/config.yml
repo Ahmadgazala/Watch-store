@@ -15,3 +15,8 @@ collections:
       - { name: "title", label: "العنوان", widget: "string" }
       - { name: "body", label: "المحتوى", widget: "markdown" }
 
+backend:
+  name: github
+  repo: your-username/your-repository
+  branch: main
+  auth_endpoint: https://your-username.github.io/admin/auth.html
