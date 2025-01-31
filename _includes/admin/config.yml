@@ -1,0 +1,17 @@
+backend:
+  name: admin
+  repo: https://github.com/Ahmadgazala/Watch-store
+  branch: main
+
+media_folder: "public"
+public_folder: "/public"
+
+collections:
+  - name: "public"
+    label: "المقالات"
+    folder: "public"
+    create: true
+    fields:
+      - { name: "title", label: "العنوان", widget: "string" }
+      - { name: "body", label: "المحتوى", widget: "markdown" }
+
