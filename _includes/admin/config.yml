@@ -17,6 +17,6 @@ collections:
 
 backend:
   name: github
-  repo: your-username/your-repository
+  repo: https://github.com/Ahmadgazala/Watch-store
   branch: main
   auth_endpoint: https://Ahmadgazala.github.io/admin/auth.html
