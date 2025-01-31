@@ -19,4 +19,4 @@ backend:
   name: github
   repo: your-username/your-repository
   branch: main
-  auth_endpoint: https://your-username.github.io/admin/auth.html
+  auth_endpoint: https://Ahmadgazala.github.io/admin/auth.html
