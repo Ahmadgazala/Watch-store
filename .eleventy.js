@@ -13,7 +13,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('p8.webp');
   eleventyConfig.addPassthroughCopy('instagrm.png');
   eleventyConfig.addPassthroughCopy('facebook.png');
-  eleventyConfig.addPassthroughCopy('./admin/');
+  eleventyConfig.addPassthroughCopy('admin');
 
 
 
