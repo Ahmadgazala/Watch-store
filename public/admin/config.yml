@@ -3,11 +3,11 @@ backend:
   branch: main
 
 media_folder: "public"
-public_folder: "/public"
+public_folder: "Public"
 
 collections:
   - name: "products"
-    label: "Products"
+    label: "products"
     files:
       - label: "Product"
         name: "products"
