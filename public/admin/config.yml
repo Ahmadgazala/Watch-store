@@ -14,33 +14,25 @@ collections:
         file: "public/index.njk"
         format: "frontmatter"
         fields:
-          - {
-              label: "Products",
-              name: "products",
-              widget: "list",
-              fields:
-                [
-                  { label: "Image", name: "image", widget: "image" },
-                  { label: "Title", name: "title", widget: "string" },
-                  { label: "Description", name: "description", widget: "text" },
-                  {
-                    label: "Features",
-                    name: "features",
-                    widget: "list",
-                    field:
-                      { label: "Feature", name: "feature", widget: "string" },
-                  },
-                  {
-                    label: "Rating",
-                    name: "rating",
-                    widget: "string",
-                    default: "⭐⭐⭐⭐⭐",
-                  },
-                  { label: "Price", name: "price", widget: "string" },
-                  {
-                    label: "WhatsApp Link",
-                    name: "whatsapp",
-                    widget: "string",
-                  },
-                ],
-            }
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - {
+                  label: "Features",
+                  name: "features",
+                  widget: "list",
+                  fields:
+                    [{ label: "Feature", name: "feature", widget: "string" }],
+                }
+              - {
+                  label: "Rating",
+                  name: "rating",
+                  widget: "string",
+                  default: "⭐⭐⭐⭐⭐",
+                }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "WhatsApp Link", name: "whatsapp", widget: "string" }
