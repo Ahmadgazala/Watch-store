@@ -2,18 +2,18 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 
-  # These lines should *not* be indented
-media_folder: "public" # Media files will be stored in the repo under static/images/uploads
-public_folder: "public" # The src attribute for uploaded media will begin with /images/uploads
+media_folder: "public" # Media files will be stored in the repo under public
+public_folder: "public" # The src attribute for uploaded media will begin with /public
 
 collections:
-  -name products: "index.njk"
-   label: "index.njk"
-   folder: "public"
-   create: true
-   fields:
-     - {label: "title", name: "title", widget: "string"}
-     - {label: "description", name: "description", widget: "string"}
-     - {label: "price", name: "price", widget: "string"}
-     - {label: "image", name: "image", widget: "image"} 
-
+  - name: "index"
+    label: "Index Page"
+    folder: "public"
+    create: true
+    format: "frontmatter"
+    extension: "njk"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
