@@ -1,17 +1,19 @@
 backend:
-  name: github
-  repo: https://github.com/Ahmadgazala/Watch-store
-  branch: main
-  auth_endpoint: https://Ahmadgazala.github.io/admin/auth.html
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
 
-media_folder: "public"
-public_folder: "/public"
+  # These lines should *not* be indented
+media_folder: "public" # Media files will be stored in the repo under static/images/uploads
+public_folder: "public" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - name: "public"
-    label: "المقالات"
-    folder: "public"
-    create: true
-    fields:
-      - { name: "title", label: "العنوان", widget: "string" }
-      - { name: "body", label: "المحتوى", widget: "markdown" }
+  -name products: "index.njk"
+   label: "index.njk"
+   folder: "public"
+   create: true
+   fields:
+     - {label: "title", name: "title", widget: "string"}
+     - {label: "description", name: "description", widget: "string"}
+     - {label: "price", name: "price", widget: "string"}
+     - {label: "image", name: "image", widget: "image"} 
+

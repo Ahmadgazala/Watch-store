@@ -14,7 +14,7 @@
     "@11ty/eleventy": "^3.0.0"
   },
   "dependencies": {
+    "decap-cms-app": "^3.6.1",
     "watch-store": "file:"
   }
 }
-    
