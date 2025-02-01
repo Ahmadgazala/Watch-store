@@ -9,9 +9,9 @@ collections:
   - name: "products"
     label: "Products"
     files:
-      - label: "Product Page"
+      - label: "Product"
         name: "products"
-        file: "public/products.njk
+        file: "public/products.njk"
         format: "frontmatter"
         fields:
           - {
