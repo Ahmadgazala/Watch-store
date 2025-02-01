@@ -3,7 +3,7 @@ backend:
   branch: main
 
 media_folder: "public"
-public_folder: "Public"
+public_folder: "/public"
 
 collections:
   - name: "products"
