@@ -1,19 +1,38 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  branch: main
 
-media_folder: "public" # Media files will be stored in the repo under public
-public_folder: "public" # The src attribute for uploaded media will begin with /public
+media_folder: "public"
+public_folder: "/public"
 
 collections:
-  - name: "index"
-    label: "Index Page"
-    folder: "public"
-    create: true
+  - name: "products"
+    label: "Products"
+    file: "public/products.njk"
     format: "frontmatter"
-    extension: "njk"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Price", name: "price", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
+      - {
+          label: "Products",
+          name: "products",
+          widget: "list",
+          fields:
+            [
+              { label: "Image", name: "image", widget: "image" },
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Description", name: "description", widget: "text" },
+              {
+                label: "Features",
+                name: "features",
+                widget: "list",
+                field: { label: "Feature", name: "feature", widget: "string" },
+              },
+              {
+                label: "Rating",
+                name: "rating",
+                widget: "string",
+                default: "⭐⭐⭐⭐⭐",
+              },
+              { label: "Price", name: "price", widget: "string" },
+              { label: "WhatsApp Link", name: "whatsapp", widget: "string" },
+            ],
+        }
