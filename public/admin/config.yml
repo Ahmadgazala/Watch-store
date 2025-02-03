@@ -13,6 +13,7 @@ collections:
         name: "products"
         file: "public/index.html"
         format: "frontmatter"
+
         fields:
           - label: "Products"
             name: "products"
