@@ -11,7 +11,6 @@ collections:
     files:
       - label: "Product"
         name: "products"
-        file: "index.njk"
         file: "public/index.html"
         format: "frontmatter"
         fields:
