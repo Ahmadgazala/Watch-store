@@ -11,13 +11,8 @@ collections:
     files:
       - label: "Product"
         name: "products"
-<<<<<<< Updated upstream
         file: "public/index.html"
         format: "frontmatter"
-=======
-        file: "products.json"
-        format: "json"
->>>>>>> Stashed changes
         fields:
           - label: "Products"
             name: "products"
