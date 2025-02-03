@@ -22,11 +22,28 @@ products:
 
 ---
 
-<div class="social-buttons">
-  <a href="https://facebook.com">
-    <img class="icon" src="facebook.png">
-  </a>
-  <a href="https://www.instagram.com/ahmad_gzaleh?igsh=MTZoa3MzeTY1b2llYg==" target="_blank">
-    <img class="icon" src="instagrm.png">
-  </a>
-</div>
+{% for product in products %}
+  <div class="product-card">
+    <img src="{{ product.image }}" alt="{{ product.title }}" class="product-image">
+      <div class="product-info">
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.description }}</p>
+        <ul class="features">
+          {% for feature in product.features %}
+            <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+        <p class="rating">{{ product.rating }}</p>
+        <p class="price">{{ product.price }} jd</p>
+        <a href="{{ product.whatsapp }}" target="_blank" style="text-decoration: none;">
+          <button>اطلب الآن عبر واتساب</button>
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+  <div class="social-buttons">
+    <a href="https://facebook.com">
+      <img class="icon" src="facebook.png"></a>
+      <a href="https://www.instagram.com/ahmad_gzaleh?igsh=MTZoa3MzeTY1b2llYg==" target="_blank">
+        <img class="icon" src="instagrm.png"></a>
+      </div>

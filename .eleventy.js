@@ -3,6 +3,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("style.css");
 
 
+
+
   eleventyConfig.addPassthroughCopy("p1.webp");
   eleventyConfig.addPassthroughCopy('p2.webp');
   eleventyConfig.addPassthroughCopy('p3.webp');
