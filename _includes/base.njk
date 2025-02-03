@@ -10,14 +10,26 @@
   <body>
     <h1>{{ title }}</h1>
     {% include 'header.njk' %}
-
-
-
-
     <section class="products-container">
-   
-
-
+      {% for product in products %}
+        <div class="product-card">
+          <img src="{{ product.image }}" alt="{{ product.title }}" class="product-image">
+          <div class="product-info">
+            <h3>{{ product.title }}</h3>
+            <p>{{ product.description }}</p>
+            <ul class="features">
+              {% for feature in product.features %}
+                <li>{{ feature }}</li>
+              {% endfor %}
+            </ul>
+            <p class="rating">{{ product.rating }}</p>
+            <p class="price">{{ product.price }} JD</p>
+            <a href="{{ product.whatsapp }}" target="_blank" style="text-decoration: none;">
+              <button>اطلب الآن عبر واتساب</button>
+            </a>
+          </div>
+        </div>
+      {% endfor %}
       <!-- Product 1 -->
       <div class="product-card">
         <img src="p1.webp" alt="Product 1" class="product-image">

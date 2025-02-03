@@ -7,11 +7,11 @@ public_folder: "/public"
 
 collections:
   - name: "products"
-    label: "products"
+    label: "Products"
     files:
       - label: "Product"
         name: "products"
-        file: "/index.njk"
+        file: "index.njk"
         format: "frontmatter"
         fields:
           - label: "Products"
